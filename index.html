@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de HQs Estilo Anos 80</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Crie histórias em quadrinhos no estilo clássico da Marvel dos anos 80. Use IA para gerar roteiros e imagens incríveis a partir de suas ideias. Construa sua própria HQ épica, uma cena de cada vez, com o poder da Gemini AI.">
+    <meta name="author" content="Michel Douglas Dos Santos">
+    <meta name="keywords" content="gerador de hq, criar quadrinhos, marvel comics, estilo anos 80, inteligência artificial, gemini, google ai, hq online, história em quadrinhos, criador de comics, arte de ia, roteiro de hq, super-heróis, vilões, aventura épica, gibi, arte de gibi, design de quadrinhos, gerador de imagens, texto para imagem, ia generativa, quadrinhos clássicos, ben-day dots, estilo retrô, vintage comics, stan lee, jack kirby, john byrne, chris claremont, x-men, vingadores, homem-aranha, capitão américa, thor, hulk, ficção científica, fantasia, drama de super-herói, narrativas visuais, criatividade digital, ferramenta de criação, web app, michel douglas online, curso de ia, desenvolvedor web, frontend, react, seo para artistas">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Komika+Text&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <!-- Add Babel for in-browser JSX/TSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <style>
+      body {
+        font-family: 'Komika Text', cursive;
+      }
+      .font-bangers {
+        font-family: 'Bangers', cursive;
+      }
+      .comic-speech-bubble {
+        position: relative;
+        background: white;
+        border-radius: .4em;
+        border: 4px solid black;
+      }
+      .comic-speech-bubble:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-top-color: black;
+        border-bottom: 0;
+        margin-left: -20px;
+        margin-bottom: -24px;
+      }
+       .comic-narrator-box {
+        background: #fde047; /* yellow-300 */
+        border: 4px solid black;
+        padding: 0.75rem;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- Main application script, transpiled by Babel -->
+    <script type="text/babel" src="./index.tsx"></script>
+  </body>
+</html>
